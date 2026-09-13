@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
  
-void bSortI2(vector<int>& arr, int& comparaciones, int& intercambios) { 
+void sSort(vector<int>& arr, int& comparaciones, int& intercambios) { 
     int len = arr.size();
     comparaciones = 0;
     intercambios = 0;
@@ -40,7 +40,7 @@ void test(vector<int> arr) {
 
     int comparaciones = 0;
     int intercambios = 0;
-    bSortI2(arr, comparaciones, intercambios);
+    sSort(arr, comparaciones, intercambios);
  
     cout << "Arreglo ordenado: ";
     print(arr);
